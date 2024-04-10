@@ -26,7 +26,5 @@ jobs:
       run: docker build . --file http_proxy.Dockerfile --tag tyronesch/simple_http_proxy:0.1
     - name: list images 
       run: docker image ls 
-    - name: run images 
-      run: docker run  tyronesch/simple_http_proxy:0.1
     - name: Docker Push #tyronesch/python_hello_world:tagname
       run: docker push tyronesch/simple_http_proxy:0.1
